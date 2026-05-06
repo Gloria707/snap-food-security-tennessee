@@ -63,9 +63,9 @@ compress
 
 * Three types of variables:
 *   (1) Aggregated across ALL members:  employment, disability, education,
-*                                       children, elderly — using egen max/total
+*                                       children, elderly - using egen max/total
 *   (2) Household-level (same for all members): SNAP, food security, income,
-*                                       size, type — already consistent
+*                                       size, type - already consistent
 *   (3) Householder only (pulineno==1): age, race, citizenship, homeownership
 * -----------------------------------------------------------------------
 
@@ -74,7 +74,7 @@ drop if prtage == -1 & pesex == -1 & peeduca == -1 & pemlr == -1
 foreach v in hesp1 hrfs12md pemaritl hetenure cbsa pehspnon prdisflg hrnumhou peeduca ptdtrace pesex hefaminc prcitshp hrpoor {
     replace `v' = . if `v' < 0
 }
-* ── STEP 1: Create person-level indicators for aggregation ──
+* STEP 1: Create person-level indicators for aggregation 
 
 * Employment status (valid rows only: pemlr > 0)
 gen _emp   = (inlist(pemlr, 1, 2)) if pemlr > 0 
@@ -128,7 +128,7 @@ label var hh_maxeduc     "Highest education level in household"
 
 * STEP 3: Keep one row per household (pulineno == 1)
 * pulineno identifies row order within the household.
-* pulineno==1 is the householder — their age, race, and citizenship
+* pulineno==1 is the householder - their age, race, and citizenship
 * represent the household. For CSV years without pulineno, the data
 * are already sorted so the first row per household is the householder.
 
@@ -250,7 +250,7 @@ label values citizen yesno
 * and BEFORE the keep if !missing() sample restriction
 *-----------------------------------------------------------------------
 
-* race_cat: 1=White (ref), 2=Black, 3=Other ──
+* race_cat: 1=White (ref), 2=Black, 3=Other ─
 * Built from ptdtrace (householder race, pulineno==1 row)
 gen race_cat = .
 replace race_cat = 1 if ptdtrace == 1                       
