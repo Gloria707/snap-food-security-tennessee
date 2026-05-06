@@ -250,7 +250,7 @@ label values citizen yesno
 * and BEFORE the keep if !missing() sample restriction
 *-----------------------------------------------------------------------
 
-* race_cat: 1=White (ref), 2=Black, 3=Other ─
+* race_cat: 1=White (ref), 2=Black, 3=Other 
 * Built from ptdtrace (householder race, pulineno==1 row)
 gen race_cat = .
 replace race_cat = 1 if ptdtrace == 1                       
