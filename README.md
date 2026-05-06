@@ -1,20 +1,28 @@
-# snap-food-security-tennessee
-Code for SNAP Participation and Food Security in Tennessee, 2019–2023
-# SNAP and Food Security in Tennessee Metro Areas
+# SNAP and Food Security in Tennessee's Low Income Population
+Code for SNAP Participation and Food Security in Tennessee, 2019-2023
 ## Replication Code
 
-**Paper:** SNAP Participation and Food Security in Tennessee Metropolitan Areas: 
-Evidence from the CPS Food Security Supplement, 2019–2023
+**Paper:** The Effect of SNAP on Food Security among Low Income households in Tennessee: 
+Evidence from the CPS Food Security Supplement, 2019-2023
 
 ## Data
 - Source: Current Population Survey Food Security Supplement (CPS-FSS)
-- Years: 2019–2023 (December supplements)
+- Years: 2019-2023 (December supplements)
 - Access: https://www.census.gov/programs-surveys/cps/data.html
 - Files needed: dec19pub.csv, dec20pub.csv, dec21pub.csv, dec22pub.csv, dec23pub.csv
 
 ## Sample
-- Non-metro and 8 Tennessee metropolitan areas (CBSAs: 16860, 17300, 17420, 27740, 28700, 28940, 32820, 34980)
 - SNAP-eligible households at or below 130% FPL (size-adjusted)
+- Non-metro and 8 Tennessee metropolitan areas:
+  - 0 Non Metro
+  - 16860 Chattanooga TN-GA
+  - 17300 Clarksville TN-KY
+  - 17420 Cleveland TN
+  - 27740 Johnson City TN
+  - 28700 Kingsport-Bristol TN-VA
+  - 28940 Knoxville TN
+  - 32820 Memphis TN-MS-AR
+  - 34980 Nashville-Davidson TN
 - N = 754 households with valid SNAP and food security indicators
 
 ## Key Variables
@@ -24,7 +32,7 @@ Evidence from the CPS Food Security Supplement, 2019–2023
 - **eligible**: Size-adjusted 130% FPL threshold from hefaminc × hrnumhou
 
 ## Software
-- Stata
+- Stata 15 or later
 - Required packages: estout (ssc install estout)
 
 ## Files
