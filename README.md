@@ -8,7 +8,7 @@ Evidence from the CPS Food Security Supplement, 2019-2023
 ## Data
 - Source: Current Population Survey Food Security Supplement (CPS-FSS)
 - Years: 2019-2023 (December supplements)
-- Access: https://www.census.gov/programs-surveys/cps/data.html
+- Access: https://www.census.gov/data/datasets/time-series/demo/cps/cps-supp_cps-repwgt/cps-food-security.html
 - Files needed: dec19pub.csv, dec20pub.csv, dec21pub.csv, dec22pub.csv, dec23pub.csv
 
 ## Sample
