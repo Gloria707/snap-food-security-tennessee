@@ -37,3 +37,4 @@ Evidence from the CPS Food Security Supplement, 2019-2023
 
 ## Files
 - `snap-food-security-analysis.do` — Full analysis do-file (data cleaning, variable construction, all models)
+- `figure1_conceptual_framework.do` — Graphviz DOT code for Figure 1 
